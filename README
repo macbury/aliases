@@ -1,0 +1,6 @@
+Aliases used by me.
+
+Add this to bash rc or zshrc
+source ~/.aliases/all
+
+To update run au
