@@ -13,4 +13,5 @@ alias rrs="ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoo
 alias kurwa='sudo $(fc -ln -1)'
 alias ni="npm install"
 alias ns="npm start"
-alias rzshrc="source ~/.zshrc"
+alias reload="source ~/.zshrc"
+alias au="cd ~/.aliases/ && ggpull && cd - && reload"
