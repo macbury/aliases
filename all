@@ -10,7 +10,7 @@ alias dcs="docker-compose start"
 alias dcd="docker-compose down"
 alias dcu="docker-compose up"
 alias rrs="ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd).start'"
-alias kurwa='sudo $(fc -ln -1)'
+alias wyśmienicie='sudo $(fc -ln -1)'
 alias ni="npm install"
 alias ns="npm start"
 alias nt="npm test"
