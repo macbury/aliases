@@ -28,5 +28,7 @@ alias sq="bin/sidekiq"
 alias ge="./gradlew"
 alias http="sudo ruby -rrack -rpuma -e \"require 'rack/handler/puma'; include Rack;Handler::Puma.run Builder.new{run Directory.new(Dir.pwd)}, Port: 80\""
 alias gsync="gcm && ggpull && gf"
+alias bootstrap="bi; ra db:create db:migrate; RAILS_ENV=test ra db:migrate; sc"
 alias cr="gcm && ggpull && gf && gco $1"
-
+alias rb="gsync && gco $1 && grbm"
+alias fiknij="be cap $1 pumactl:stop && be cap $1 pumactl:start"
