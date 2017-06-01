@@ -1,3 +1,6 @@
+alias vup='vagrant up'
+alias vdn='vagrant halt'
+alias sv='vagrant ssh'
 alias ber="bundle exec rspec"
 alias be="bundle exec"
 alias bi="bundle install"
@@ -32,3 +35,13 @@ alias bootstrap="bi; ra db:create db:migrate; RAILS_ENV=test ra db:migrate; sc"
 alias cr="gcm && ggpull && gf && gco $1"
 alias rb="gsync && gco $1 && grbm"
 alias fiknij="be cap $1 pumactl:stop && be cap $1 pumactl:start"
+alias conf="nano ~/.aliases/all && reload"
+alias c="clear"
+alias h='history'
+alias jest_kurwa_net="ping google.pl"
+alias ax="chmod a+x"
+alias ip="curl ifconfig.me"
+alias wypierdalaj="kill -9 $1"
+alias psg="ps aux | grep $1"
+alias dc="docker-compose"
+alias s="ssh"
