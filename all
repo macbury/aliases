@@ -33,7 +33,7 @@ alias sc="bin/rspec"
 alias sq="bin/sidekiq"
 alias ge="./gradlew"
 alias http="sudo ruby -rrack -rpuma -e \"require 'rack/handler/puma'; include Rack;Handler::Puma.run Builder.new{run Directory.new(Dir.pwd)}, Port: 80\""
-alias gsync="gcm && ggpull && gf"
+alias gsync="gcm && ggpull --rebase && gf"
 alias bootstrap="bi; ra db:create db:migrate; RAILS_ENV=test ra db:migrate; sc"
 alias cr="gcm && ggpull && gf && gco $1"
 alias rb="gsync && gco $1 && grbm"
@@ -53,3 +53,8 @@ alias t="tmux"
 alias gst="git status"
 alias brumm="echo '∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑|'"
 alias ss="bin/sidekiq start"
+alias at="atom ."
+
+function duck() { open /Applications/Google\ Chrome.app/ "https://duckduckgo.com/?q=$1"\ }
+function github() { open /Applications/Google\ Chrome.app/ "https://duckduckgo.com/?q=!github $1"\ }
+function rubygems() { open /Applications/Google\ Chrome.app/ "https://duckduckgo.com/?q=!rubygems $1"\ }
