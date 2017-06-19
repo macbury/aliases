@@ -60,3 +60,4 @@ function duck() { open /Applications/Google\ Chrome.app/ "https://duckduckgo.com
 function github() { open /Applications/Google\ Chrome.app/ "https://duckduckgo.com/?q=!github $1"\ }
 function rubygems() { open /Applications/Google\ Chrome.app/ "https://duckduckgo.com/?q=!rubygems $1"\ }
 alias pizdu_docker="docker ps -a -q | xargs docker stop"
+alias pizdu_docker_i_siup="pizdu_docker && docker-compose up"
