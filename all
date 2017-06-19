@@ -54,7 +54,8 @@ alias gst="git status"
 alias brumm="echo '∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑|'"
 alias ss="bin/sidekiq start"
 alias at="atom ."
-
+alias prr="pry"
 function duck() { open /Applications/Google\ Chrome.app/ "https://duckduckgo.com/?q=$1"\ }
 function github() { open /Applications/Google\ Chrome.app/ "https://duckduckgo.com/?q=!github $1"\ }
 function rubygems() { open /Applications/Google\ Chrome.app/ "https://duckduckgo.com/?q=!rubygems $1"\ }
+alias pizdu_docker="docker ps -a -q | xargs docker stop"
