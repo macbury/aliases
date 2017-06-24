@@ -62,3 +62,5 @@ function rubygems() { open /Applications/Google\ Chrome.app/ "https://duckduckgo
 alias pizdu_docker="docker ps -a -q | xargs docker stop"
 alias pizdu_docker_i_siup="pizdu_docker && docker-compose up"
 alias pizdu_vim="EDITOR=nano"
+alias fs="bin/foreman start"
+alias ras="dcs && fs"
