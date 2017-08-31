@@ -4,7 +4,6 @@ alias sv='vagrant ssh'
 alias ber="bundle exec rspec"
 alias be="bundle exec"
 alias bi="bundle install"
-alias bc="bin/buyers_club"
 alias rg="bin/rails g"
 alias rs="bin/rails s"
 alias rc="bin/rails c"
