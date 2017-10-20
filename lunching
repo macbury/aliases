@@ -1,0 +1,5 @@
+function szama() {
+  curl -s --user "$LUNCHING_USERNAME":"$LUNCHING_PASSWORD" https://api.lunching.pl/api/account/order-list --output /tmp/szama.json
+  szama=$(jq --raw-output ".[].meal" /tmp/szama.json)
+  echo "Dzisiaj do żarła jest: $szama"
+}

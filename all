@@ -73,6 +73,7 @@ alias at0="tmux attach -t 0"
 alias yoda_ggpush="ggpush --force"
 
 source ~/.aliases/harvest
+source ~/.aliases/lunching
 
 sublime () {
   open -a "Sublime Text" $@
