@@ -74,6 +74,7 @@ alias yoda_ggpush="ggpush --force"
 
 source ~/.aliases/harvest
 source ~/.aliases/lunching
+source ~/.aliases/elixir
 
 sublime () {
   open -a "Sublime Text" $@
