@@ -1,0 +1,4 @@
+function tagme() {
+  ctags --fields=+l -R --languages=ruby --exclude=.git --exclude=log -f .tags . $(bundle list --paths)
+  rbenv ctags $(rbenv local)
+}
