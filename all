@@ -64,6 +64,7 @@ function rubygems() { open /Applications/Google\ Chrome.app/ "https://duckduckgo
 alias pizdu_docker="docker ps -a -q | xargs docker stop"
 alias pizdu_docker_i_siup="pizdu_docker && docker-compose up"
 alias pizdu_vim="EDITOR=nano"
+alias pizdu_dns="dscacheutil -flushcache"
 alias fs="bin/foreman start"
 alias raus="dcs && fs"
 alias db_reset="ra db:drop db:create db:migrate db:seed && RAILS_ENV=test ra  db:drop db:create db:migrate"
@@ -73,6 +74,9 @@ alias grar="rar | grep"
 alias radb="ra db:drop db:create db:migrate:with_data db:seed && RAILS_ENV=test ra db:drop db:create db:migrate:with_data db:seed"
 alias at0="tmux attach -t 0"
 alias yoda_ggpush="ggpush --force"
+alias rac="rake console"
+alias jaarrr="yard doc && yard server"
+alias wip='gaa && gcmsg "WIP" && ggpush'
 
 source ~/.aliases/harvest
 source ~/.aliases/lunching
