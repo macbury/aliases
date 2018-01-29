@@ -76,7 +76,8 @@ alias at0="tmux attach -t 0"
 alias yoda_ggpush="ggpush --force"
 alias rac="rake console"
 alias jaarrr="yard doc && yard server"
-alias wip='gaa && gcmsg "WIP" && ggpush'
+alias wip='gaa && gcmsg "WIP"'
+alias wio="wip && ggpush"
 
 source ~/.aliases/harvest
 source ~/.aliases/lunching
