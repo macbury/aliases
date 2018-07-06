@@ -78,10 +78,14 @@ alias rac="rake console"
 alias jaarrr="yard doc && yard server"
 alias wip='gaa && gcmsg "WIP"'
 alias wio="wip && ggpush"
-
+alias ob="watch -n1 -x"
+alias dh="git push heroku master"
+alias yolo="sudo"
 source ~/.aliases/harvest
 source ~/.aliases/lunching
 source ~/.aliases/elixir
+
+gcmsg='git commit -S -m'
 
 sublime () {
   open -a "Sublime Text" $@
