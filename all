@@ -91,3 +91,4 @@ sublime () {
   open -a "Sublime Text" $@
 }
 alias gfd="git commit --amend --date='$(date -R)'"
+alias sub="sublime"
