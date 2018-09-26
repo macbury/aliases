@@ -84,6 +84,7 @@ alias yolo="sudo"
 source ~/.aliases/harvest
 source ~/.aliases/lunching
 source ~/.aliases/elixir
+source ~/.aliases/transport
 
 gcmsg='git commit -S -m'
 

@@ -1,0 +1,11 @@
+function next_tram() {
+  curl -sk 'http://xn--krakw-3ta.online/api' -H 'Content-Type: application/json' -H 'Accept: */*' --data-binary '{"query":"{\n  departures(from: \"Białucha\", to: \"Wzgórza Krzesławickie\", at: \"10 minutes from now\", limit: 2) {\n    line {\n      name\n    }\n    \n    direction {\n      name\n    }\n    \n    time {\n      formatted\n    }\n  }\n}","variables":null,"operationName":null}' > /tmp/departures.json;
+
+  first_departure_time=$(jq -r ".data.departures[0].time.formatted" /tmp/departures.json)
+  first_departure_line=$(jq -r ".data.departures[0].line.name" /tmp/departures.json)
+  second_departure_time=$(jq -r ".data.departures[1].time.formatted" /tmp/departures.json)
+  second_departure_line=$(jq -r ".data.departures[1].line.name" /tmp/departures.json)
+
+  echo "Linia numer ${first_departure_line} odjedzie o ${first_departure_time}"
+  echo "Linia numer ${second_departure_line} odjedzie o ${second_departure_time}"
+}
