@@ -81,6 +81,7 @@ alias wio="wip && ggpush"
 alias ob="watch -n1 -x"
 alias dh="git push heroku master"
 alias yolo="sudo"
+alias docker-trim='docker run --rm --privileged --pid=host justincormack/nsenter1 /sbin/fstrim /var/lib/docker'
 source ~/.aliases/harvest
 source ~/.aliases/lunching
 source ~/.aliases/elixir
