@@ -1,3 +1,4 @@
+alias giggity='ggpull && ggpush'
 alias vup='vagrant up'
 alias vdn='vagrant halt'
 alias sv='vagrant ssh'
