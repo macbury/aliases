@@ -1,4 +1,5 @@
-alias ls="ls --color=tty -h -a -l"
+alias ls="exa -h -a -l"
+alias fd="fdfind"
 alias giggity='ggpull && ggpush'
 alias vup='vagrant up'
 alias vdn='vagrant halt'
@@ -97,3 +98,4 @@ sublime () {
 }
 alias gfd="git commit --amend --date='$(date -R)'"
 alias sub="sublime"
+alias emacs="emacs -nw"
