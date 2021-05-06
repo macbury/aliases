@@ -1,3 +1,5 @@
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 alias ls="exa -h -a -l"
 alias fd="fdfind"
 alias giggity='ggpull && ggpush'
@@ -90,12 +92,9 @@ source ~/.aliases/harvest
 source ~/.aliases/lunching
 source ~/.aliases/elixir
 source ~/.aliases/transport
-
+source ~/.aliases/extract
 gcmsg='git commit -S -m'
 
-sublime () {
-  open -a "Sublime Text" $@
-}
 alias gfd="git commit --amend --date='$(date -R)'"
 alias sub="sublime"
 alias emacs="emacs -nw"
