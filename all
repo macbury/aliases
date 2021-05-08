@@ -82,7 +82,7 @@ alias at0="tmux attach -t 0"
 alias yoda_ggpush="ggpush --force"
 alias rac="rake console"
 alias jaarrr="yard doc && yard server"
-alias wip='gaa && gcmsg "WIP"'
+alias wip='gaa && gcmsg "WIP $(emoji)"'
 alias wio="wip && ggpush"
 alias ob="watch -n1 -x"
 alias dh="git push heroku master"
@@ -98,3 +98,4 @@ gcmsg='git commit -S -m'
 alias gfd="git commit --amend --date='$(date -R)'"
 alias sub="sublime"
 alias emacs="emacs -nw"
+alias emoji="~/.aliases/emoji.rb"
